@@ -12,7 +12,7 @@ like you can checkout the repo and test it in your project.
 node-boot is in a very (very!) early development stage so the API could change on a daily basis. Check the
 example if you want to be sure to check out the latest API.
 
-the @NodeBootApp annotation will bootstrap your application. You need to pass it the express server object 
+the ``@NodeBootApp`` annotation will bootstrap your application. You need to pass it the express server object 
 and the port you want to run your app.
 
 ```
@@ -20,7 +20,7 @@ and the port you want to run your app.
 class App {}
 ```
 
-Mappings can be done with the @RequestMapping annotation. 
+Mappings can be done with the ``@RequestMapping`` annotation. 
 
 ```
 class MyFirstController {
