@@ -13,7 +13,6 @@ class App {
         App.express.get('/', function (req, res) {
             res.send('hello node-boot!');
         });
-        App.express.listen(App.port);
     }
 }
 
