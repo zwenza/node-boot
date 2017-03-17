@@ -2,6 +2,7 @@ const NodeBoot = require('../lib/index');
 
 const NodeBootApp = NodeBoot.NodeBootApp;
 const RequestMapping = NodeBoot.RequestMapping;
+const RequestMethod = NodeBoot.RequestMethod;
 
 const express = require('express');
 
@@ -9,12 +10,12 @@ const express = require('express');
 class App {}
 
 class MyFirstController {
-    @RequestMapping('GET', '/')
+    @RequestMapping(RequestMethod.GET, '/')
     mappedEndpoint1(req, res){
         res.send('hello from mapping1!');
     }
 
-    @RequestMapping('GET', '/world')
+    @RequestMapping(RequestMethod.POST, '/world')
     mappedEndpoint2(req, res){
         res.send('hello from mapping2!');
     }
