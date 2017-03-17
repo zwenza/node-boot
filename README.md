@@ -40,4 +40,4 @@ class MyFirstController {
 
 * **David Jöch** - [Github](https://github.com/zwenza) - [Twitter](https://twitter.com/Zwenza)
 
-See also the list of [contributors](https://github.com/zwenza/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/zwenza/node-boot/contributors) who participated in this project.
