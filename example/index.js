@@ -1,22 +1,21 @@
 const NodeBoot = require('../lib/index');
 
 const NodeBootApp = NodeBoot.NodeBootApp;
-const Controller = NodeBoot.Controller;
-
-const bootstrapNodeBootApp = NodeBoot.bootstrapNodeBootApp;
+const RequestMapping = NodeBoot.RequestMapping;
 
 const express = require('express');
 
 @NodeBootApp(express(), 3000)
-class App {
-    constructor() {
-        App.express.get('/', function (req, res) {
-            res.send('hello node-boot!');
-        });
+class App {}
+
+class MyFirstController {
+    @RequestMapping('GET', '/')
+    mappedEndpoint1(req, res){
+        res.send('hello from mapping1!');
+    }
+
+    @RequestMapping('GET', '/world')
+    mappedEndpoint2(req, res){
+        res.send('hello from mapping2!');
     }
 }
-
-@Controller('test1', 'test2')
-class Test {}
-
-bootstrapNodeBootApp(App);
